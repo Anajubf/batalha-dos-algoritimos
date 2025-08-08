@@ -102,3 +102,40 @@ let precisaDormir = true;
 if(precisaDormir){
     console.log(`Você precisa descansar: ${precisaDormir}`);
 }
+
+console.log(`Capítulo 3: Quando acordei, a floresta tinha ficado um pouco mais clara, e pude ver uma enorme pedra que bloqueava uma passagem.`);
+
+if(forca >= 60) {
+    console.log("Você conseguirá mover a pedra");
+} else {
+    console.log("Você não consiguirá mover a pedra");
+}
+
+console.log(`Conseguindo mover a pedra, tive a possibilidade de ver com mais atenção a porta que impedia a entrada secreta para a caverna do Guardião. Olhando com mais atenção a fechadura, vi que se parecia com uma pena, uma pena de coruja que ganhei antes de começar minha jornada. Então peguei-a e coloquei para descobrir se a porta iria ser destrancada.`);
+
+let temPenaCoruja = true;
+if(temPenaCoruja) {
+    console.log(`A porta foi destrancada: ${temPenaCoruja}`);
+}
+
+console.log(`Com a passagem aberta, entrei no corredor estreito e começei andar e de longe consigo avistar a porta da caverna do Guardiâo que só pode ser aberta com a senha que está dentro do artefato que recuperei em minha última missão.`);
+
+if(inteligencia >= 900) {
+    console.log(`Terá inteligência suficiente para abrir o artefato e entender a senha e mapa presentes no artefato.`);
+    inteligenciaTotal = inteligencia *2;
+    quedaInimigo = poderGuardiao -= 50;
+    console.log(`A inteligência total de ${nome} será ${inteligenciaTotal}, e o poder do guardião irá cair para ${quedaInimigo}.`);
+} else if (inteligencia >= 600) {
+    console.log(`Terá inteligência para abrir o artefato, mas terá dificuldades para interpretar a senha e o mapa presentes no artefato. `);
+    inteligenciaIgual = inteligencia;
+    console.log(`A inteligência de ${nome} continuará a mesma: ${inteligenciaIgual}`);
+} else if (inteligencia >= 300) {
+    console.log(`Terá dificuldades para abrir e interpretar a senha e o mapa presentes no artefato`);
+    InteligenciaPerdida = inteligencia -= 560;
+    console.log(`Com uma parte da inteligência perdida ${nome} ficará com ${InteligenciaPerdida}.`)
+} else {
+    console.log (`Não consiguirá enterder a finalidade do obejto, e consequentemente não completará a missão`);
+    vantagemInimigo = poderGuardiao *3;
+    console.log(`Não tinha inteligência suficiente para completar a missão e com isso o Guardião conseguiu execultar seu plano triplicou seus poderes, ficando com ${vantagemInimigo}.`);
+}
+console.log(`Atingindo a inteligência necessária entrei na caverna e peguei a poção do Guadião, conseguindo assim salvar o reino das sombras.`);
