@@ -81,3 +81,24 @@ let temPergaminho = true;
 if(temPergaminho) {
     console.log(`Pode passar pelo túnel: ${temPergaminho}`);
 }
+
+//Condicionais Compostas - Escolhas Estratégicas
+console.log(`Capítulo 2: Depois de passar pelo túnel, me vi obrigada a seguir por um caminho de pedras. E durante a trilha começei a ser atacada por pássaros carnívoros, desesperada começei a lutar contra eles para que eu tentasse sobreviver e continuar a missão.`);
+
+if(defesa >= 50) {
+console.log("Você venceu a luta");
+} else {
+    console.log("Voce não venceu a luta");
+} combatesVencidos++
+
+console.log(`Após essa luta, os combates vencindos serão:${combatesVencidos}`);
+
+pontosAgilidade = agilidade -= 15;
+console.log(`Ao longo do caminho, fui atingida por uma pedra e cai em um buraco, e só notei depois que havia perdido um dos objetos que eu tinha recebido da figura, que era um olho grego, e por isso acabei perdendo 15 pontos de agilidade, ficando com ${agilidade} pontos.`);
+
+console.log(`Caminhando mais a frente cheguei a uma floresta escura e constatei que estava com 80% do caminho feito e percebi que precisava descansar porque minha energia estava baixa.`);
+
+let precisaDormir = true;
+if(precisaDormir){
+    console.log(`Você precisa descansar: ${precisaDormir}`);
+}
