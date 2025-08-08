@@ -74,3 +74,10 @@ let missaoAtual = "enfrentar o Guardião";
 //Prólogo
 console.log(`Prólogo: A heroina ${nome}, depois de enfrentar um poderoso dragão no castelo do rei malvado, conseguiu recuperar um artefato sagrado. Vitoriosa, deixou o castelo, mas sua joranda estava longe de terminar. Ao retornar é informada de que o Guardião está preparando uma poção para conseguir enganar o reino e assumir o trono de ${localAtual}, e com isso precisaria ${missaoAtual} e salvar o reino.`);
 
+//Condicionais Simples - A Primeira Decisão
+console.log(`Capítulo 1: Estava eu andando, quando de repente apareceu uma figura brilhante diante de mim e me ofereceu 3 objetos que me ajudariam durante a missão. Adiente, encontrei um túnel com uma porta trancada, e percebi que um dos objetos era um pergaminho poderia me ajudar a abrir.`);
+
+let temPergaminho = true;
+if(temPergaminho) {
+    console.log(`Pode passar pelo túnel: ${temPergaminho}`);
+}
