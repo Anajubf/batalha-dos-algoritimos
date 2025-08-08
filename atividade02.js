@@ -139,3 +139,15 @@ if(inteligencia >= 900) {
     console.log(`Não tinha inteligência suficiente para completar a missão e com isso o Guardião conseguiu execultar seu plano triplicou seus poderes, ficando com ${vantagemInimigo}.`);
 }
 console.log(`Atingindo a inteligência necessária entrei na caverna e peguei a poção do Guadião, conseguindo assim salvar o reino das sombras.`);
+
+//Epílogo
+if(poderGuardiao <= 50) {
+    console.log(`A ${nome}, conquistou uma grande vitória.`);
+    xp += 100;
+    combatesVencidos++
+    console.log(`Com esses bônus ela alcançou ${xp} de xp e ${combatesVencidos} combates vencidos`);
+} else {
+    console.log(`A ${nome} trabalhou e se dedicou bastante até aqui mas não conseguiu vencer e salvar o reino`);
+}
+
+console.log(`Fim da história - Aguarde o próximo nível e a próxima missão em que a heroína ${nome} da classe ${classe} será chamada.`);
