@@ -229,3 +229,45 @@ if (i === 0) {
     console.log(`Como um cavaleiro, recebeu uma recompensa por capturar um fugitivo, aumentando nosso ouro para ${ouro}. `);
 }
 }
+
+//Capítulo 7
+//Sistema de batalha usando arrays e for tradicional
+console.log(`Capítulo 7: A batalha final épica`)
+let inimigosBatalha = ["Senhor Ferro", "Mourn Cinzas", "O Espreitor"];
+let danoRecebido = [];
+
+console.log(`A heroína ${nome}, enfrenta ${inimigosBatalha.length}! `);
+
+//Batalha usando for tradicional para controle preciso
+for (let i = 0; i < inimigosBatalha.length; i++) {
+    let inimigo = inimigosBatalha[i];
+    let dano = Math.floor(Math.random() * 15) + 10;
+
+    console.log(`Rodada ` + (i + 1) + ` -Enfrentando: ` + inimigo);
+
+    danoRecebido.push(dano);
+
+//Lógica especial para cada rodada baseada no índice
+if (i === 0) {
+    console.log(`Primeira batalha: conseguir vencer o meu inimigo Senhor Ferro e coletar mais um tesouro.`);
+    tesouroColetado.push(`Coroa de Ferro`);
+} else if (i === 1) {
+    console.log(`Segunda batalha: com minha força consegui vencer Mourn Cinzas e com isso ganhei mais um tesouro.`);
+    tesouroColetado.push(`Espelho Vazio`);
+} else {
+    console.log(`Última batalha: com a minha excelente pontuação de inteligência e defesa venci o maior e o mais poderoso inimigo que eu tive, libertando assim o conde Aidan e recebendo um tesouro.`);
+    tesouroColetado.push(`Moeda de Cristal dos Deuses`);
+} 
+}
+
+//Calculando estatísticas da batalha usando for tradicional
+let danoTotal = 0;
+for (let i = 0; i < danoRecebido.length; i++) {
+    danoTotal += danoRecebido[i];
+    console.log(`Rodada` + (i + 1) + `-Dano: ` + danoRecebido[i]);
+}
+
+console.log(`Dano causado: ` + danoTotal);
+console.log(`O total de tesouros encontrados ${tesouroColetado.length}`);
+
+console.log(`Epilogo: A heroína ${nome}, da classe ${classe} chegou até o castelo, exolorou as salas a procura do Conde, mas nada achou, só encontrou um livro que continha poções e uma relíquia. Durante a jornada se uniu com seus aliados para conseguir vencer os inimigos e libertar Aidan, o conde que é o braço dirieto do rei que estava nas masmorras, em baixo do castelo. ${nome} se superou mais uma vez e completou sua missão.`)
