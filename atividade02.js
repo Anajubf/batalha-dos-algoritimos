@@ -151,3 +151,37 @@ if(poderGuardiao <= 50) {
 }
 
 console.log(`Fim da história - Aguarde o próximo nível e a próxima missão em que a heroína ${nome} da classe ${classe} será chamada.`);
+
+// Nível 3 
+
+// Resgate da Saga Anterior
+console.log(`Logo após terminar a missão, a guerreira ${nome}, já foi convocada para a próxima missão, onde precisaria libertar o conde, o braço direito do rei, em Troia, já que o Guardião conseguiu enganar a nobreza, convencendo a todos de que o conde Aidan tinha armado para o rei, e por isso tinha sido preso.`);
+
+let inventario = [
+    "Poção de sangue de Elfo", "Boné da invisibilidade", "Lança da Habilidade", "Escudo de Égide", "Colar da Inteligência"];
+let aliados = ["Mago Trevor","Coruja Elora", "Cavaleiro Frederico"];
+let inimigos = ["Duende Amis", "Duque Olavo", "Bruxo Bartolomeu"];
+let salasCastelos = ["Sala do trono", "O Grande salão", "Biblioteca das Artes", "Sala de estar"];
+let tesouroColetado = [];
+
+//Capítulo 4
+console.log(`Capítulo 4: Durante a minha viagem encontrei algumas poções que me ajudariam na missão.`)
+// Declaração e Inicialização
+let pocoesEncontradas = ["Poção de invisibilidade", "Poção da Sorte", "Poção de adaptação de Dano"];
+let armadilhasAtiradas = [];
+
+// Acesso e modificação de elementos
+console.log(`Poção encontrada:` + pocoesEncontradas[0]);
+console.log(`Total de poções mágicas:` + pocoesEncontradas.length);
+
+// Modificando elemento específico
+inventario[2] = "Lança de Habilidade máxima"; //Upgrade na arma
+console.log(`${nome} aprimorou uma arma ${inventario[2]}`);
+
+// Métodos de array fundamentais
+inventario.push(`Bússola do conhecimento.`);
+console.log(`Novo item adicionado no inventário: ` + inventario);
+
+let itemInventadoRemovido = inventario.pop();
+console.log(`Item removido do inventário: ` + itemInventadoRemovido);
+console.log(`Inventário atualizado: ` + inventario);
