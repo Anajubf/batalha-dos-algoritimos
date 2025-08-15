@@ -209,3 +209,23 @@ defesa += 15;
     console.log(`Com essa picada minha vida atual diminui para: ${vidaAtual}`);
 }
 }
+
+//Capíulo 6
+//Recrutando aliados com for tradicional
+console.log(`Capítulo 6: Convocando meus aliados.`);
+for (let i = 0; i < aliados.length; i++) {
+    let aliado = aliados[i];
+    console.log(`Aliado ` + (i + 1) + `: ` + aliado + ` se ajunta a missão!`);
+
+//Cada posição no array determina habilidade especial
+if (i === 0) {
+    forca *= 2;
+    console.log(`Como um Mago, ele duplicou nossa força, totalizando ${forca}. `);
+} else if (i === 1) {
+    inteligencia += 10;
+    console.log(`Como uma coruja, ela é um animal que é frequentemente associado por sua sabedoria, por essa razão nossa inteligência aumentou para ${inteligencia}. `);
+} else {
+    ouro += 35;
+    console.log(`Como um cavaleiro, recebeu uma recompensa por capturar um fugitivo, aumentando nosso ouro para ${ouro}. `);
+}
+}
