@@ -185,3 +185,27 @@ console.log(`Novo item adicionado no inventário: ` + inventario);
 let itemInventadoRemovido = inventario.pop();
 console.log(`Item removido do inventário: ` + itemInventadoRemovido);
 console.log(`Inventário atualizado: ` + inventario);
+
+//Capítulo 5
+//Explorando cada sala do castelo usando for tradicional
+console.log(`Capítulo 5: Explorando as salas do castelo`);
+console.log(`Inicio a minha exploração das ` + salasCastelos.length +  ` salas místicas.`);
+
+for (let i = 0; i < salasCastelos.length; i++) {
+    console.log(`Sala ` + (i + 1) + `: ` + salasCastelos[i]);
+
+//Lógica diferente para cada sala baseado no índice
+if (i === 0) {
+    console.log(`Quando eu estava entrando na Sala do trono encontrei uma relíquia esquecida.`);
+tesouroColetado.push (`Relíquia dos Três solos`);
+console.log(`Meu primeiro tesouro coletado: ${tesouroColetado}.`);
+} else if (i === 2) {
+    console.log(`Depois adentrei o cômodo 3 que era a Biblioteca das Artes e procurando entre as pratileiras me deparei com um livro de feitiços e então o peguei, pensando que futuramente poderia usá-lo para me defender de um dos meus inimigos o Duende Amis. `);
+defesa += 15;
+    console.log(`Pegando o livro de feitiços sua defesa aumentou para: ${defesa}`);
+} else {
+    console.log(`Encontei na parede para ver os feitiços e as poções, e a parede se abriu para um passagem secreta, onde a sala que ela levava estava toda escura, de repente senti uma picada no meu tornozelo, percebendo que era uma cobra a afastei.`);
+    vidaAtual -= 30;
+    console.log(`Com essa picada minha vida atual diminui para: ${vidaAtual}`);
+}
+}
